@@ -1,0 +1,36 @@
+<head>
+       
+        <script src="plot.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/0.15.0/math.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.css">
+        
+      </head>
+      
+      <body>
+        <div  class="div15">
+        Insert Equation Here : <input type="text" id="equation"  class="form-control">
+        Min : <input type="text" id="min"  class="form-control">
+        Max : <input type="text" id="max"  class="form-control">
+        <button type="button"  onclick="autoGenerateNumbersToPlot()" id="draw" class="btn btn-primary">Draw</button>
+      </div>
+        <div id="myDiv">
+            
+        </div>
+        <script src="calc.js"></script>
+        <style>
+          #min ,#max{
+            width: 70px;
+            display:inline;
+            margin-right: 10px;
+          }
+          .div15{
+            margin:10px 10px;
+          }
+          #equation{
+            width: 400px;
+            margin-right:10px;
+            display: inline;
+          }
+        </style>
+      </body>
